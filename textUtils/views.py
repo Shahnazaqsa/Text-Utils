@@ -77,6 +77,6 @@ def analyze(request):
         and removepunc != "on"
         and capitalized != "on"
     ):
-        return HttpResponse("Error")
+        return HttpResponse("<h1>Error</h1>")
 
     return render(request, "analyze.html", var1)
